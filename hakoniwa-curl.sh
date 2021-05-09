@@ -9,8 +9,8 @@ if [ $USER = root ]; then
  rm -rf hakoniwa_autobuild
  mkdir hakoniwa_autobuild
  cd hakoniwa_autobuild
- curl -OL -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/840799450346684446/ver2.0_.zip
- curl -OL -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+ curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/840799450346684446/ver2.0_.zip
+ curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
  java -version &> /dev/null
   if [ $? -ne 0 ] ; then
    yum install -y java-1.8.0-openjdk-headless
