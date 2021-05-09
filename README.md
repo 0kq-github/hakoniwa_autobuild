@@ -1,6 +1,7 @@
 # 魔導の箱庭自動構築スクリプト
 Conoha(CentOS7)で動作確認済み  
 ubuntuでも動きます  
+ファイアウォールはfirewall-cmd又はufwの場合25565/tcpを自動で許可します  
 本家はこちら  
 http://world-minecraft.com/archives/693923759.html
 ## Useage
