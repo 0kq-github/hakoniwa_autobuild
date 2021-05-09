@@ -37,7 +37,6 @@ if [ $USER = root ]; then
    firewall-cmd --permanent --add-port=25565/tcp
    firewall-cmd --reload
  fi
-
  echo "魔導の箱庭を起動中..."
  bash ./start.sh
 else
