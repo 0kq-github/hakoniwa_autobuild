@@ -29,8 +29,15 @@ if [ $USER = root ]; then
  echo java -Xmx$mem -Xms$mem -server -jar server.jar nogui >> start.sh
  chmod +x start.sh
  echo "eula=true" >> eula.txt
- firewall-cmd --permanent --add-port=25565/tcp
- firewall-cmd --reload
+ firewall-cmd --help
+  if [ $? -ne 0 ] ; then
+   ufw allow 25565/tcp
+   ufw reload
+  else
+   firewall-cmd --permanent --add-port=25565/tcp
+   firewall-cmd --reload
+ fi
+
  echo "魔導の箱庭を起動中..."
  bash ./start.sh
 else
