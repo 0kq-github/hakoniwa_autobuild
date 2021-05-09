@@ -14,7 +14,7 @@ if [ $USER = root ]; then
  apt install -y unzip
  unzip hakoniwa.zip
  wget -O server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
- echo java -Xmx$mem -Xms$mem -server -jar server.jar nogui >> start.sh
+ echo "echo 魔導の箱庭を起動中...\njava -Xmx$mem -Xms$mem -server -jar server.jar nogui" >> start.sh
  chmod +x start.sh
  echo "eula=true" >> eula.txt
  ./start.sh
