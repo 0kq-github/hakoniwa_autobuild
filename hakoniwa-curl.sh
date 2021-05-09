@@ -6,6 +6,7 @@ if [ $USER = root ]; then
  echo ""
  echo "###############################################################"
  read -p "メモリ割り当て量(単位込みで入力してください): " mem
+ cd ~
  rm -rf hakoniwa_autobuild
  mkdir hakoniwa_autobuild
  chmod +x hakoniwa_autobuild
