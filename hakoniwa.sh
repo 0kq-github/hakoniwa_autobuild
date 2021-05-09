@@ -29,7 +29,7 @@ if [ $USER = root ]; then
  echo java -Xmx$mem -Xms$mem -server -jar server.jar nogui >> start.sh
  chmod +x start.sh
  echo "eula=true" >> eula.txt
- firewall-cmd --help
+ firewall-cmd --help &> /dev/null
   if [ $? -ne 0 ] ; then
    ufw allow 25565/tcp
    ufw reload
