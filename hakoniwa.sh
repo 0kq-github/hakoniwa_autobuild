@@ -32,6 +32,6 @@ if [ $USER = root ]; then
  echo "魔導の箱庭を起動中..."
  bash ./start.sh
 else
- echo "権限が必要です"
- echo "sudo ./hakoniwa.shで実行してね"
+ echo "root権限が必要です"
+ echo "sudo bash ./hakoniwa.sh又はrootで実行してね"
 fi
