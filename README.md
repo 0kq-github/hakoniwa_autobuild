@@ -9,10 +9,10 @@ rootまたはsudoが使えるユーザーで実行してください
 
 curl版
 ```bash
-$ curl -OL https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/main/hakoniwa-curl.sh && sudo bash ./hakoniwa-curl.sh
+curl -OL https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/main/hakoniwa-curl.sh && sudo bash ./hakoniwa-curl.sh
 ```
 
 wget版
 ```bash
-$ wget https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/main/hakoniwa.sh && sudo bash ./hakoniwa.sh
+wget https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/main/hakoniwa.sh && sudo bash ./hakoniwa.sh
 ```
