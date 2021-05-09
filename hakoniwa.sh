@@ -3,6 +3,7 @@ if [ $USER = root ]; then
  echo ""
  echo "魔導の箱庭 自動セットアップ for Linux"
  echo "本家URL http://world-minecraft.com/archives/693923759.html"
+ echo "eula https://www.minecraft.net/ja-jp/terms/r3/"
  echo ""
  echo "###############################################################"
  read -p "eulaに同意しますか？(y/n): " eula
