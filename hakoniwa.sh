@@ -33,5 +33,5 @@ if [ $USER = root ]; then
  bash ./start.sh
 else
  echo "root権限が必要です"
- echo "sudo bash ./hakoniwa.sh又はrootで実行してね"
+ echo "sudo bash ./hakoniwa.sh又はrootユーザーで実行してね"
 fi
