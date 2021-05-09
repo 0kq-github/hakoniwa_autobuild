@@ -5,6 +5,13 @@ if [ $USER = root ]; then
  echo "本家URL http://world-minecraft.com/archives/693923759.html"
  echo ""
  echo "###############################################################"
+ read -p "eulaに同意しますか？(y/n): " eula
+ if [ $eula = y ]; then
+  :
+ else
+  echo "eulaに同意する必要があります"
+  exit
+ fi
  read -p "メモリ割り当て量(単位込みで入力してください): " mem
  cd ~
  rm -rf hakoniwa_autobuild
