@@ -8,6 +8,7 @@ if [ $USER = root ]; then
  read -p "メモリ割り当て量(単位込みで入力してください): " mem
  rm -rf hakoniwa_autobuild
  mkdir hakoniwa_autobuild
+ chmod +x hakoniwa_autobuild
  cd hakoniwa_autobuild
  java -version &> /dev/null
   if [ $? -ne 0 ] ; then
