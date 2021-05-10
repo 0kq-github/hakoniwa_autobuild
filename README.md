@@ -1,4 +1,4 @@
-# 魔導の箱庭自動構築スクリプト
+# 魔導の箱庭自動構築スクリプト for Linux
 Conoha(CentOS7)とUbuntu20.04.2で動作確認済み  
 ファイアウォールはfirewall-cmd又はufwの場合25565/tcpを自動で許可します  
 構築後は`bash ~/hakoniwa_autobuild/start.sh`で鯖を起動できます。  
