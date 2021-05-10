@@ -4,18 +4,18 @@ set mem=
 
 echo ###############################################################
 echo.
-echo é­”å°ã®ç®±åº­ è‡ªå‹•ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ— for Windows
-echo æœ¬å®¶URL http://world-minecraft.com/archives/693923759.html
+echo –‚“±‚Ì” ’ë ©“®ƒZƒbƒgƒAƒbƒv for Windows
+echo –{‰ÆURL http://world-minecraft.com/archives/693923759.html
 echo eula https://www.minecraft.net/ja-jp/terms/r3/
 echo.
 echo ###############################################################
-set /P EULA="eulaã«åŒæ„ã—ã¾ã™ã‹ï¼Ÿ(y/n): "
+set /P EULA="eula‚É“¯ˆÓ‚µ‚Ü‚·‚©H(y/n): "
 if not %EULA%==y (
-  echo "eulaã«åŒæ„ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™"
+  echo "eula‚É“¯ˆÓ‚·‚é•K—v‚ª‚ ‚è‚Ü‚·"
   pause
   exit
 )
-set /P mem="ãƒ¡ãƒ¢ãƒªå‰²ã‚Šå½“ã¦é‡(å˜ä½è¾¼ã¿ã§å…¥åŠ›ã—ã¦ãã ã•ã„): "
+set /P mem="ƒƒ‚ƒŠŠ„‚è“–‚Ä—Ê(’PˆÊ‚İ‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢): "
 rd /s /q hakoniwa_autobuild
 mkdir hakoniwa_autobuild
 cd hakoniwa_autobuild
@@ -27,6 +27,6 @@ echo java -Xmx%mem% -Xms%mem% -server -jar server.jar nogui>>start.bat
 echo pause>> start.bat
 echo eula=true>eula.txt
 type readme.txt
-echo é­”å°ã®ç®±åº­ã‚’èµ·å‹•ä¸­... (åˆ¥ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã§é–‹ãã¾ã™)
+echo –‚“±‚Ì” ’ë‚ğ‹N“®’†... (•ÊƒEƒBƒ“ƒhƒE‚ÅŠJ‚«‚Ü‚·)
 start start.bat
 pause
