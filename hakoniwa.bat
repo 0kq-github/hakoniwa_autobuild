@@ -11,7 +11,7 @@ echo.
 echo ###############################################################
 set /P EULA="eulaに同意しますか？(y/n): "
 if not %EULA%==y (
-  echo "eulaに同意する必要があります"
+  echo eulaに同意する必要があります
   pause
   exit
 )
