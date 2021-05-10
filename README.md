@@ -8,5 +8,5 @@ http://world-minecraft.com/archives/693923759.html
 
 
 ```bat
-curl -OL https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/main/hakoniwa-curl.sh && sudo bash ./hakoniwa-curl.sh
+curl -OL https://raw.githubusercontent.com/0kq-github/hakoniwa_autobuild/Windows/hakoniwa.bat && hakoniwa.bat
 ```
