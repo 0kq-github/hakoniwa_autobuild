@@ -4,7 +4,7 @@ Conoha(CentOS7)とUbuntu20.04.2で動作確認済み
 構築後は`bash ~/hakoniwa_autobuild/start.sh`で鯖を起動できます。  
 本家はこちら  
 http://world-minecraft.com/archives/693923759.html
-## Useage
+## Usage
 rootまたはsudoが使えるユーザーで実行してください
 
 curl版
