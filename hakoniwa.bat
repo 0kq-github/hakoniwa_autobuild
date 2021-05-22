@@ -19,7 +19,7 @@ set /P mem="ƒƒ‚ƒŠŠ„‚è“–‚Ä—Ê(’PˆÊ‚İ‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢): "
 rd /s /q hakoniwa_autobuild
 mkdir hakoniwa_autobuild
 cd hakoniwa_autobuild
-curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/843433177175293992/ver2.0.1.zip
+curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/845493409829093416/ver2.0.2.zip
 curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
 call powershell -command "Expand-Archive -Path '.\hakoniwa.zip' -DestinationPath '.\'"
 echo @echo off>start.bat
