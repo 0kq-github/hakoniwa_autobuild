@@ -4,7 +4,7 @@ set mem=
 
 echo ###############################################################
 echo.
-echo 魔導の箱庭 自動セットアップ for Windows
+echo 魔導の箱庭 ver2.1.2 自動セットアップ for Windows
 echo 本家URL http://world-minecraft.com/archives/693923759.html
 echo eula https://www.minecraft.net/ja-jp/terms/r3/
 echo.
@@ -19,7 +19,7 @@ set /P mem="メモリ割り当て量(単位込みで入力してください): "
 rd /s /q hakoniwa_autobuild
 mkdir hakoniwa_autobuild
 cd hakoniwa_autobuild
-curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/850952201982967829/ver2.1.1.zip
+curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/850976277354512395/ver2.1.2.zip
 curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
 call powershell -command "Expand-Archive -Path '.\hakoniwa.zip' -DestinationPath '.\'"
 echo @echo off>start.bat
