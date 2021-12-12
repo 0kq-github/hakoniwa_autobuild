@@ -21,10 +21,11 @@ mkdir hakoniwa_autobuild
 cd hakoniwa_autobuild
 curl -L -o hakoniwa.zip https://cdn.discordapp.com/attachments/832626889335504986/850976277354512395/ver2.1.2.zip
 curl -L -o server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+curl -L -o log4j2_112-116.xml https://launcher.mojang.com/v1/objects/02937d122c86ce73319ef9975b58896fc1b491d1/log4j2_112-116.xml
 call powershell -command "Expand-Archive -Path '.\hakoniwa.zip' -DestinationPath '.\'"
 echo @echo off>start.bat
 echo title –‚“±‚Ì” ’ëver2.1 - 1.16.5>>start.bat
-echo java -Xmx%mem% -Xms%mem% -server -jar server.jar nogui>>start.bat
+echo java -Dlog4j.configurationFile=log4j2_112-116.xml -Xmx%mem% -Xms%mem% -server -jar server.jar nogui>>start.bat
 echo pause>> start.bat
 echo eula=true>eula.txt
 type readme.txt
